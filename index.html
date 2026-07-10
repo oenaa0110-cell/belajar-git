@@ -17,6 +17,12 @@
       <input class="form-control me-2" type="search" placeholder="What do you want to eat?" aria-label="Search" style="width: 300px; border-radius: 25px;"></input>
       <button class="btn btn-outline-success" type="submit" style="border-radius: 25px;">Search</button>
     </form>
+   
+    <div class="d-flex flex-row-reverse">
+  <div class="p-2">
+<a href="login.html"><button class="btn btn-primary" style="border-radius: 25px;">Login</button></a>
+</div>
+</div>
   </div>
 </nav>
 
@@ -102,6 +108,51 @@
   
   </div>
  </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Jumlah yang dipesan</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h3>SeIndonesia</h3>
+        <p>Rp33.000</p>
+        <hr>
+        <div class="input-group" style="width: 150px;">
+          <button class="btn btn-outline-secondary" type="button" id="minus">-</button>
+
+          <input type="text " class="form-control text-center" id="qty" value="1" readonly>
+
+          <button class="btn btn-outline-success" type="button" id="plus">+</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+        <button type="button" class="btn btn-success">Simpan</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+	const qty = document.getElementById('qty');
+
+    document.getElementById('plus').addEventListener('click', function () {
+        qty.value = parseInt(qty.value) + 1;
+    });
+
+    document.getElementById('minus').addEventListener('click', function () {
+        if (parseInt(qty.value) > 1) {
+            qty.value = parseInt(qty.value) - 1;
+        }
+    });
+  </script>
 
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
