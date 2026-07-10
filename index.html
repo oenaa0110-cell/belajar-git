@@ -4,12 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar GIT</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
 
-    <h1>Belajar GIT</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam qui atque id laudantium voluptatum velit. Repellendus culpa voluptatum asperiores, deleniti nesciunt dolor accusamus rem sunt. Rerum inventore nihil ipsam explicabo?</p>
+  <nav class="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand">Let's Eat</a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="What do you want to eat?" aria-label="Search" style="width: 300px; border-radius: 25px;"></input>
+      <button class="btn btn-outline-success" type="submit" style="border-radius: 25px;">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/img/banner1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/banner2.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/banner3.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+<div class="container-fluid mt-4">
+	<div class="row">
+		<div class="col-lg-3">
+		<div class="card" style="width: 17rem;">
+  <img src="assets/img/sei sapi Indonesia.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">SeIndonesia, Grandwisata</h3>
+    <p class="card-text">1.27 km (15-25 min)</p>
+    <p class="fw-bold">Rp33.000 <span class="badge text-bg-danger rounded-pill">40% off</span></p>
+    <button  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success"> <i class="bi bi-basket"></i> Buy now</button> 
+
+    		</div>
+      </div>
+    </div>
+
+  <div class="col-lg-3">
+		<div class="card" style="width: 17rem;">
+  <img src="assets/img/subway.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Subway (Grandwisata)</h3>
+    <p class="card-text">6.5 km (25-35 min)</p>
+    <p class="fw-bold">Rp54.000 <span class="badge text-bg-danger rounded-pill">34% off</span></p>
+    <button  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success"> <i class="bi bi-basket"></i> Buy now</button> 
+
+    		</div>
+      </div>
+    </div>
+
+  <div class="col-lg-3">
+		<div class="card" style="width: 17rem;">
+  <img src="assets/img/endorphins.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Endorphins, Pakuwom Mall</h3>
+    <p class="card-text">10.64 km (40-50 min)</p>
+    <p class="fw-bold">Rp34.000 <span class="badge text-bg-danger rounded-pill">15% off</span></p>
+    <button  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success"> <i class="bi bi-basket"></i> Buy now</button> 
+
+    		</div>
+      </div>
+    </div>
     
+  <div class="col-lg-3">
+		<div class="card" style="width: 17rem;">
+  <img src="assets/img/dominos pizza.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Domino's Pizza Mustika Jaya</h3>
+    <p class="card-text">1.62 km (15-25 min)</p>
+    <p class="fw-bold">Rp52.200 <span class="badge text-bg-danger rounded-pill">70% off</span></p>
+    <button  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success"> <i class="bi bi-basket"></i> Buy now</button> 
+
+    		</div>
+      </div>
+    </div>  
+    
+  
+  
+  </div>
+ </div>
+
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
